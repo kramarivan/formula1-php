@@ -1,30 +1,8 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Dec 18, 2017 at 01:48 PM
--- Server version: 10.1.10-MariaDB
--- PHP Version: 5.6.19
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `webprog`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `countries`
---
 
 CREATE TABLE `countries` (
   `id` int(11) NOT NULL,
@@ -32,9 +10,6 @@ CREATE TABLE `countries` (
   `country_name` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `countries`
---
 
 INSERT INTO `countries` (`id`, `country_code`, `country_name`) VALUES
 (1, 'AF', 'Afghanistan'),
@@ -283,11 +258,6 @@ INSERT INTO `countries` (`id`, `country_code`, `country_name`) VALUES
 (244, 'ZM', 'Zambia'),
 (245, 'ZW', 'Zimbabwe');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `news`
---
 
 CREATE TABLE `news` (
   `id` int(11) NOT NULL,
@@ -298,20 +268,13 @@ CREATE TABLE `news` (
   `archive` enum('Y','N') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `news`
---
 
 INSERT INTO `news` (`id`, `title`, `description`, `date`, `picture`, `archive`) VALUES
 (1, 'Exciting Formula 1 Race in the US', 'Formula 1 enthusiasts were thrilled by the high-speed action during the recent US Grand Prix. The race featured intense competition and unexpected twists.', '2023-10-18 12:22:35', 'news1.webp', 'N'),
 (2, 'Formula 1: Technological Advancements Driving Success', 'Formula 1 teams are pushing the boundaries of technology with innovations that are revolutionizing the sport. Explore how technology is changing the face of Formula 1.', '2023-10-18 12:25:40', 'news2.jpeg', 'N'),
 (3, 'Formula 1 Champions Celebrate Victory', 'The Formula 1 season culminated in a spectacular championship event. The worlds best drivers celebrated their victories in style.', '2023-10-18 12:25:40', 'news3.jpeg', 'N');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `users`
---
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
@@ -325,52 +288,24 @@ CREATE TABLE `users` (
   `archive` enum('Y','N') NOT NULL DEFAULT 'Y'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `users`
---
 
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `countries`
---
 ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `news`
---
+
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `users`
---
+
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `countries`
---
 ALTER TABLE `countries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
---
--- AUTO_INCREMENT for table `news`
---
+
 ALTER TABLE `news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `users`
---
+
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
