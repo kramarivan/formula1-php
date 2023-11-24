@@ -10,7 +10,7 @@
 	unset($_SESSION['user']);
 
 	$_SESSION['user']['valid'] = 'false';
-	$_SESSION['message'] = '<p>See you again soon!</p>';
+	$_SESSION['message'] = '<p>See you next time!</p>';
 	
 	header("Location: index.php?menu=1");
 	exit;
