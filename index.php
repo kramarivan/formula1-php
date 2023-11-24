@@ -58,6 +58,9 @@ print '
 	
 	# About us
 	else if ($menu == 4) { include("about-us.php"); }
+
+	# Gallery
+	else if ($menu == 8) { include("gallery.php"); }
 	
 	# Register
 	else if ($menu == 5) { include("register.php"); }
