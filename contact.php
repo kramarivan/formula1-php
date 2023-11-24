@@ -5,13 +5,13 @@
 	<iframe src="http://maps.google.com/maps?q=45.772366, 15.944950&z=16&output=embed" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<form action="send-contact.php" id="contact_form" name="contact_form" method="POST">
 			<label for="fname">First Name *</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+			<input type="text" id="fname" name="firstname" placeholder="Name.." required>
 			
 			<label for="lname">Last Name *</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+			<input type="text" id="lname" name="lastname" placeholder="Last name.." required>
 				
-			<label for="email">Your E-mail *</label>
-			<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+			<label for="email"> E-mail *</label>
+			<input type="email" id="email" name="email" placeholder="E-mail.." required>
 
 			<label for="country">Country</label>
 			<select id="country" name="country">

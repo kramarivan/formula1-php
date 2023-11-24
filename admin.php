@@ -17,7 +17,7 @@
 		</div>';
 	}
 	else {
-		$_SESSION['message'] = '<p>Please register or login using your credentials!</p>';
+		$_SESSION['message'] = '<p>Register or Login!</p>';
 		header("Location: index.php?menu=6");
 	}
 ?>
