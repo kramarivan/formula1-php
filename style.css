@@ -123,6 +123,19 @@ img {
     width: 100%;
 }
 
+#gallery figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 22%;
+	border: 1px solid black;
+}
+#gallery figcaption {
+	font-size: 90%;
+	height: 50px;
+	text-align: center;
+}
+
 video {
     margin: 0 1em 1em 0;
     float: left;
